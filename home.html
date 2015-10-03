@@ -1,0 +1,63 @@
+<!DOCTYPE html>   
+<html lang="" data-ng-app="GoogleDirection">
+<head>
+  <meta t="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular Demo</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    
+    
+  <link rel="stylesheet" href="css/main.css">  
+    
+    <style>
+     #map-canvas {
+    width: 650px;
+    height: 450px;
+     }
+    </style>
+</head>
+    
+<body>
+    
+    <div class="wrapp" ng-controller="googlemapoutput">
+         <div class="row">
+                <input type="text" placeholder="Start location" ng-model="startlocation" id="startlocation"/>
+                <input type="text"  placeholder="Destination" ng-model="endlocation" id="endlocation" /> <br></br>
+                <button id="btn" ng-click="calcRoute()" ng-disabled="startlocation == null">
+                    Get Direction
+                </button>
+                 <br/></br>
+            </div>
+            <div id="map-canvas" style="height: 400px;"></div>
+    
+    <br></br>
+    
+    <!-- <div ng-controller="googlemapoutput"> -->
+        
+        <button id="btn" class="btn" ng-click="getWeather()">Show Weather</button> <br></br>
+        <div class="weatherModule" style="float:left; width: 150px">
+            <p> {{ currenttemp }}  </p>
+            <p> {{ currentweather }} </p>
+            <img ng-src ="{{ currenticon }}">
+        </div>
+        <div class="weatherModule" >
+            <p> {{ currenttemp_Des }}  </p>
+            <p> {{ currentweather_Des }} </p>
+            <img ng-src ="{{ currenticon_Des }}">   
+        </div>
+    </div>
+    
+    <!-- </div>  -->
+
+   <!-- Modules -->
+    <script src="js/app.js"></script>
+    
+    <!-- Controllers -->
+    <script src="js/controllers/HomeController.js"></script>
+    <!-- <script src="js/controllers/WeatherController.js"></script> -->
+
+    <!-- Services -->
+    <!-- <script src ="js/services/climateservice.js"></script> -->
+</body>
+</html>

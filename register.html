@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GST</title>
+<meta charset= "UTF-8"/>
+<link href= "shift.css" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<script src="js/vendor/angular.min.js"></script>
+</head>
+<body ng-app="OutboxApp">
+    <div class="main" ng-controller = "HomeController">
+      <div class="container">
+
+        <div class="email" ng-repeat="x in emails">
+          <span class="from"> 
+          		<p>{{ x.from }}</p>
+          </span> 
+          <span class="subject"> 
+            <p>{{ x.subject }}</p>
+           </span>
+          <span class="date"> 
+            <p> {{ x.datetime | date }} </p>
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+    
+    <!-- Controllers -->
+    <script src="js/controllers/HomeController.js"></script>
+
+    <!-- Services -->
+        <script src ="js/services/emails.js"></script>
+</body>
+</html>

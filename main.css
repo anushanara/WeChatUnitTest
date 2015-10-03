@@ -1,0 +1,105 @@
+.nav {
+background-image: url('http://www.lpl.arizona.edu/~lemmon/rac/black.jpg');
+height: 45px;
+}
+.nav  li{
+	display:inline-block;
+	padding: 5px;
+}
+
+.body {
+background-image: url('http://www.hdwallsweb.com/wp-content/uploads/2013/05/Best-top-desktop-google-wallpapers-hd-google-wallpaper-picture-image-3.jpg');
+height: 650px;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.body h1{
+margin-left:370px;
+text-transform: uppercase;
+color: #fff;
+}
+
+.body p{
+font-size: 23px;
+font-color: #5f5f5f;
+margin-left: 464px;
+}
+
+.content  {
+margin-top: 0px;
+padding-top: 12px;
+}
+.content p{
+margin-left: 0px;
+font-size: 15px;
+}
+.btn {
+display:       inline-block;
+padding:       2px 16px;
+background:    #efb885 url('http://dabuttonfactory.com/button.png?w=1&h=30&bgt=gradient&bgc=73d9f0&ebgc=efb885') repeat-x;
+background:    -moz-linear-gradient(#73d9f0, #efb885);
+background:    -o-linear-gradient(#73d9f0, #efb885);
+background:    -webkit-linear-gradient(#73d9f0, #efb885);
+background:    linear-gradient(#73d9f0, #efb885);
+border-radius: 5px;
+color:         #ffffff;
+font:          normal 400 16px/1 "Zenhei", sans-serif;
+text-align:    center;
+text-shadow:   0px 0px 0 #ffffff;
+}
+.weatherModule {
+    background:#f2f2f2;
+    height:150px;
+    width:250px;
+    border: 1px dashed #ccc;
+    padding: 1em;
+}
+
+.email {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 18px;
+    margin: 0 0 8px;
+    padding: 20px 0;
+}
+
+.email:hover {
+    background: #fcfcfc;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.email span {
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+}
+
+.from {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 2%;
+    width: 20%;
+}
+
+.subject {
+    width: 65%;
+}
+
+.date {
+    font-size: 14px;
+    padding-right: 2%;
+    text-align: right;
+    text-overflow: ellipsis;
+    width: 15%;
+}
+.main {
+    margin: 40px 0;
+}
+
+
+
